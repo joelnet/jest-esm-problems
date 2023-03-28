@@ -4,8 +4,6 @@
  */
 
 module.exports = {
-  testEnvironment: "jest-environment-jsdom",
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
 
@@ -17,5 +15,4 @@ module.exports = {
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
-  transform: {}
 };
