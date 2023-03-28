@@ -7,12 +7,12 @@
   "license": "ISC",
   "type": "module",
   "main": "index.js",
+  "sideEffects": false,
   "engines": {
     "node": ">=18 < 19"
   },
-  "sideEffects": false,
   "scripts": {
-    "test": "NODE_ENV=test jest",
+    "test": "jest",
     "test:esm": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "dependencies": {
@@ -23,7 +23,9 @@
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
+    "@testing-library/jest-dom": "^5.16.5",
     "babel-jest": "^29.5.0",
-    "jest": "^29.5.0"
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0"
   }
 }
