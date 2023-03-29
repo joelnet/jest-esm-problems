@@ -1,4 +1,5 @@
 import { memoize } from "../memoize.js";
+import { jest } from '@jest/globals';
 
 describe("memoize", () => {
   it("should call the function once", () => {

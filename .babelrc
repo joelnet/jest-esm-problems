@@ -1,15 +1,23 @@
 {
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": false,
+        "targets": {
+          "node": "current"
+        },
+        "modules": false
+      }
+    ]
+  ],
   "env": {
     "test": {
       "presets": [
         [
           "@babel/preset-env",
           {
-            "debug": false,
-            "targets": {
-              "esmodules": false,
-              "node": "current"
-            }
+            "debug": false
           }
         ]
       ]
